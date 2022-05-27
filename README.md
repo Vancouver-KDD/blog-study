@@ -2,58 +2,62 @@
 
 *Read this in other languages*: [English](README.md), [한국어](README_ko.md) 
 
-## 📝 목표 
+## 📝 Goal 
 
-- 규칙적인 블로그 포스팅을 통해 글쓰기 능력을 향상시킵니다
-- 프리젠테이션을 통해 퍼블릭 스피킹 실력을 향상시킵니다
-- 다른 사람들로부터 다양한 지식들을 습득합니다
+- Improvement of
+	- writing skills through steady and regular postings
+	- presentation skills through public speaking
+- Getting various types of knowledge and perspectives from others
 
-## 🗓 기간
-2022.06.07(화) - 2022.08.30(화) (13주, 첫째주는 OT)
+## 🗓 Period 
+2022.06.07(Tue) - 2022.08.30(Tue) (12 weeks, OT in the first week)
 
-## ❓ 진행방식
-- **매주 금요일 23:59:59** 까지 포스팅을 올리고 **pull request**를 만듭니다
-- 포스팅을 올리지 않는 주에는 다른 사람들의 포스팅을 리뷰합니다
-- **프리젠테이션(모임)** 은 **매주 화요일** 에 진행됩니다
-- 포스팅 및 프리젠테이션은 **영어**, **한국어** 중 개인적으로 편하신 언어로 작성, 진행합니다
+## ❓ How to 
+- Make a **pull request** of an article by **every other Friday**
+- If you don’t post an article in the week, you should review others’ postings
+- **Presentations** are given on **every Tuesday**
+- Posting and presentation can be written and conducted with a preferred language, either **English** or **Korean**
 
-> 🖋 포스팅 방법
-  - 2주에 한 번씩 포스팅을 씁니다
-  - 주제, 형식은 자유롭습니다
-  - 레퍼런스가 있다면 글 마지막에 반드시 명시합니다
-  - 포스팅은 다른 사람들이 쉽게 이해할 수 있도록 작성하는 것을 지향합니다
+> 🖋 Writing a post
+  - You will write and post an article every two weeks
+  - Free to choose topics or form
+  - Please leave references if you have any
+  - Please note that the article is written in plain language and easy to read
 
-> 🔖 리뷰
-  - 포스팅을 하지 않는 주에는 다른 사람들의 글을 리뷰합니다
-  - 리뷰할 사람은 매 주 운영진에 의해 발표됩니다
-  - 꼭 정해진 리뷰할 사람이 아니어도 다른 사람들의 글을 자유롭게 리뷰할 수 있습니다
-  - 기술적인 면 뿐 아니라 글쓰기에 대해서 리뷰해 주셔도 됩니다
-  - 글 작성자에 대한 예의를 지켜주세요, 틀린 것이 아니라 다른 것입니다
-  - 더 나은 방법으로 설명할 수 있는 방법 혹은 읽히기 쉬운 방법이 있다면 리뷰로 남겨주세요
-  - 비평 뿐 아니라 칭찬도 리뷰가 될 수도 있습니다
+> 🔖 Review
+  - You will review others’ posts in the week you don’t post  
+  - Reviewees will be assigned every week
+  - You can freely review others’ if they are not your reviewee
+  - You can review the writing skills as well as technical aspects
+  - Please respect the writer. There’s nothing wrong, it’s just different
+  - If you have a better way to explain or reference, please leave it as well
+  - Review is not only criticizing, but praising
 
-## 💾 PR 형식
-- 포스팅 제목
+## 💾 Rule of PR 
+- Subject: 
   ~~~
-  [이름] 글 제목
+  [Name] subject
   ~~~
-  (예. [Yongju Kwon] Java serialization vs externalization)
-- 파일 이름: 
+  (e.g. [Yongju Kwon] Java serialization vs externalization)
+
+- File Name: 
   ~~~
   yyyy-MM-dd-subject.md
   ~~~
-  (예. 2022-05-24-java-serialization-vs-externalization.md)
-- 이미지는 images 폴더에 따로 저장해 주세요
-- 지정된 리뷰어를 PR에 추가해주세요
+  (e.g. 2022-05-24-java-serialization-vs-externalization.md)
 
-## 🗣 발표
-- 포스팅한 내용을 가지고 10-15분 내외로 발표합니다
-- 발표 후 질문이 있다면 Q&A 세션을 가집니다
 
-## 💰 벌금
-- 30불의 디파짓이 있습니다
-- 포스팅을 하지 않은 경우 5불이 디파짓에서 차감됩니다
-- 포스팅이 늦게 올라온 경우 (일요일 이후) 2불이 디파짓에서 차감됩니다
-- 모든 디파짓이 다 쓰인 경우, 다음 스터디에는 참여할 수 없습니다
-- 벌금은 마지막 스터디가 끝난 후 오프라인 모임 때 사용됩니다
-- 남은 디파짓은 모두 돌려드립니다
+- Please add a separate folder for images
+- Please add your reviewer in the PR
+
+## 🗣 Presentation 
+- You will give a presentation for 10 to 15 mins (No more than 15 mins)
+- Q&A session will be conducted after every presentations
+
+## 💰 Deposit 
+- $30 will be submitted to the group leader
+- $5 will be deducted if you don’t post an article
+- $2 will be deducted if you are late to post an article
+- If the balance is all used, you cannot join the next study
+- The money gathered will be used for snacks or coffee at the last meeting
+- All remaining will be returned
