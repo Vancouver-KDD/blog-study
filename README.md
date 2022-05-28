@@ -14,8 +14,8 @@
 
 ## ❓ How to 
 - Make a **pull request** of an article by **every other Friday**
-- If you don’t post an article in the week, you should review others’ postings
-- **Presentations** are given on **every Tuesday**
+- In the week you don’t post an article, you should review others’ postings
+- **Presentations** are given on **8pm pmevery Tuesday**
 - Posting and presentation can be written and conducted with a preferred language, either **English** or **Korean**
 
 > 🖋 Writing a post
