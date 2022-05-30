@@ -23,6 +23,7 @@
   - Free to choose topics or form
   - Please leave references if you have any
   - Please note that the article is written in plain language and easy to read
+  - Please refer to _example folder in this repository
 
 > 🔖 Review
   - You will review others’ posts in the week you don’t post  
