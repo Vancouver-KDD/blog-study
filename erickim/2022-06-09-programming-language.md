@@ -1,5 +1,7 @@
 # What is a programming language?
 
+[Read Korean Version](./2022-06-09-programming-language-kr.md)
+
 Many people know that Java is a programming language, but what about HTML or English?
 
 In order to understand the meaning of programming language, let's first try to understand what is a program.
