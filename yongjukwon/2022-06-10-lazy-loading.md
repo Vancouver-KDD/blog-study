@@ -1,10 +1,4 @@
----
-title: Lazy Loading
-author: Yongju Kwon
-date: 2022-06-10 15:38:00 -0700
-categories: [Programming, Java, Database]
-tags: [Java, Database]
----
+# Lazy Loading
 
 ## 1. Background
 
