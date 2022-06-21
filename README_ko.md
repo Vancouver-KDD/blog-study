@@ -1,6 +1,6 @@
 # Blog Study
 
-*다른 언어로 글을 읽어보세요*: [English](README.md), [한국어](README_ko.md) 
+*다른 언어로 글을 읽어보세요*: [English](README.md), [한국어](README_ko.md)\
 *지금까지의 블로그 글들:* [Posts](/posts.md)
 
 ## 📝 목표 
