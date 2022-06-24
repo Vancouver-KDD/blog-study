@@ -1,6 +1,7 @@
 # Blog Study
 
-*Read this in other languages*: [English](README.md), [한국어](README_ko.md) 
+*Read this in other languages*: [English](README.md), [한국어](README_ko.md)\
+*Posts:* [Posts](/posts.md)
 
 ## 📝 Goal 
 
