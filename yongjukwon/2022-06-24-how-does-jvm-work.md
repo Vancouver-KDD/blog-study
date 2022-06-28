@@ -1,5 +1,7 @@
 # How does JVM work
 
+이 글을 먼저 읽고 오시는 걸 추천드립니다: [JVM, JRE and JDK](https://yongjukwon.github.io/posts/jvm-jre-jdk/)
+
 ## ⒈ What is Java Virtual Machine(JVM)
 
 Java Virtual Machine(JVM)의 주된 목적은 Java 컴파일러를 통해 변환된 Byte code(.class 파일)를 Machine code로 변환해주는 것이다. 이 글에서는 JVM의 아키텍쳐를 함께 보면서 어떻게 변환 과정이 이루어지는 지 알아볼 것이다.
