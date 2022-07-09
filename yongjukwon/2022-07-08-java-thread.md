@@ -1,9 +1,9 @@
 ---
-title: Java's Thread
+title: Java's Thread - 1 (Basic)
 author: Yongju Kwon
 date: 2022-07-08 19:51:00 -0700
 categories: [Programming, Java]
-tags: [Java, Thread, Process]
+tags: [Java, Thread]
 ---
 
 ## ⒈ Background
@@ -51,7 +51,7 @@ Thread class를 이용해 thread를 생성할 때에는
 > Note: Thread를 실행할 때, run이 아닌 start method를 호출한다. 자세한 내용은 밑([⒍ run() vs start()](#-run-vs-start))에서 알아볼 것이다. 
 
 ```java
-class PrimeThread extends Thread { // 1. Extend Thread class
+class PrimeThread extends Thread { // 1. Thread class를 extend한 후 
     long minPrime;
 
     PrimeThread(long minPrime) {
@@ -59,15 +59,15 @@ class PrimeThread extends Thread { // 1. Extend Thread class
     }
 
     public void run() {
-        // 2. Write codes to be ran on this thread
+        // 2. run method안에 실행 될 코드를 작성한다
         . . .
     }
 }
 
 class Main {
     public static void main(String[] args) {
-        PrimeThread pt = new PrimeThread(143); // 3. Instantiate the class extends Thread
-        pt.start(); // 4. Run the thread
+        PrimeThread pt = new PrimeThread(143); // 3. Parent thread에서 작성한 클래스를 instantiation 후 
+        pt.start(); // 4. start method를 이용해 thread를 불러온다
     }
 }
 ```
