@@ -95,7 +95,7 @@ chrome extension 은 기본적으로 js 에서 다른 js 을 불러오는 `requi
 
 ## Manifest v2 와 v3 차이점
 
-지금까지는 버전3으로 글을 적었지만 버전2의 가이드도 많이 찾아볼수 있을 것이다. 가장 큰 차이점은 버전2에서는 service worker 와 content script 가 따로 없었다. 그래서 background script 에서 DOM 에 access 가 가능했었다. V2가 2023년에 사용금지가 되면 ad block 이 더 어려워 질것이라는 [기사](https://www.theregister.com/2022/06/08/google_blocking_privacy_manifest/)도 있다.
+지금까지는 버전3으로 글을 적었지만 버전2의 가이드도 많이 찾아볼수 있을 것이다. Background Script 대신 service worker, injected script 대신 contentScript 으로 대채되었다. V2가 2023년에 사용금지가 되면 ad block 이 더 어려워 질것이라는 [기사](https://www.theregister.com/2022/06/08/google_blocking_privacy_manifest/)도 있다.
 
 ## Chrome Exntension 의 미래
 
