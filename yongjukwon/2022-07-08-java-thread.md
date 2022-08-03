@@ -1,10 +1,4 @@
----
-title: Java's Thread - 1 (Basic)
-author: Yongju Kwon
-date: 2022-07-08 19:51:00 -0700
-categories: [Programming, Java]
-tags: [Java, Thread]
----
+Java's Thread - 1 (Basic)
 
 ## ⒈ Background
 
