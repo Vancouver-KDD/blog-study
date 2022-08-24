@@ -15,7 +15,7 @@ Plane 2 는 U+20000 에서 U+2FFFF 이다.
 Plane 0 은 Basic 이라고 불리며 Plane 1 부터 16은 Supplementary 라고 부른다.
 
 예를들어 Capital letter J 는 유니코드로 U+004A 이고, [출처](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
-한글 기억 ㄱ 은 U+1100 이며 [출처](<https://en.wikipedia.org/wiki/Hangul_Jamo_(Unicode_block)>)
+한글 기억 ㄱ 은 U+1100 이며 [출처](https://www.learnkoreantools.com/en/korean-to-unicode)
 중국 中 은 U+4E2D 이고 [출처](https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=%E4%B8%AD)
 이모티콘 😀 은 U+1F600 이다 (Supplementary / Plane 1). [출처](https://unicode.org/emoji/charts/full-emoji-list.html)
 
@@ -51,12 +51,15 @@ utf-8 에서 1바이트의 범위는 00000000 에서 011111111 이며 유니코�
 이다.
 
 한글, 일본, 그리고 대부분의 중국어 같은 경우 유니코드 3바이트 범위에 들어간다.
-한글 ㄱ 은 U+1100 이며 이것을 바이너리로 변경하면.
-0001000100000000 이다
-이것을 1110xxxx 10xxxxxx 10xxxxxx
-여기에 끼워 넣으면
+한글 ㄱ 은 U+3131 이며 이것을 바이너리로 변경하면.
+0011 000100 110001 이다.
 
-1110**0001** 10**000100** 10**000000**
-인것이다.
+zzzz yyyyyy xxxxxx
 
-즉 한글 ㄱ 은 utf-8에서는 xE18480 으로 인코딩 된다.
+이것을 1110zzzz 10yyyyyy 10xxxxxx
+
+이런식으로 끼워 넣으면.
+
+1110**0011** 10**000100** 10**110001** 인것이다.
+
+즉 한글 ㄱ 은 utf-8에서는 위 바이너리로 인코딩되고 핵스값은 E384B1 이다.
