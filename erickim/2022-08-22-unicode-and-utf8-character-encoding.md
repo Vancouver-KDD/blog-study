@@ -15,7 +15,7 @@ Plane 2 는 U+20000 에서 U+2FFFF 이다.
 Plane 0 은 Basic 이라고 불리며 Plane 1 부터 16은 Supplementary 라고 부른다.
 
 예를들어 Capital letter J 는 유니코드로 U+004A 이고, [출처](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
-한글 기억 ㄱ 은 U+3131 이며 [출처](https://www.learnkoreantools.com/en/korean-to-unicode)
+한글 기역 ㄱ 은 U+3131 이며 [출처](https://www.learnkoreantools.com/en/korean-to-unicode)
 중국 中 은 U+4E2D 이고 [출처](https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=%E4%B8%AD)
 이모티콘 😀 은 U+1F600 이다 (Supplementary / Plane 1). [출처](https://unicode.org/emoji/charts/full-emoji-list.html)
 
