@@ -11,7 +11,8 @@
 - Getting various types of knowledge and perspectives from others
 
 ## 🗓 Period 
-2022.06.07(Tue) - 2022.08.30(Tue) (12 weeks, OT in the first week)
+1st: 2022.06.07(Tue) - 2022.08.30(Tue) (12 weeks, OT in the first week)\
+2nd: 2022.09.13(Tue) - 2022.12.06(Tue) (12 weeks, OT in the first week)
 
 ## ❓ How to 
 - Make a **pull request** of an article by **every other Friday**
