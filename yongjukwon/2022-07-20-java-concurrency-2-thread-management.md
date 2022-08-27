@@ -1,4 +1,4 @@
-# Java's Thread - 2 (Basic)
+# Java's Thread - 2 (Thread Management)
 
 ## ⒈ Background
 오늘은 지난 글에 이어 현재 동작하고 있는 thread를 control 할 수 있는 세 가지 방법에 대해서 알아보려고 한다.

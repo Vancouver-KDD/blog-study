@@ -1,4 +1,4 @@
-Java's Thread - 1 (Basic)
+Java's Concurrency - 1 (Basic)
 
 ## ⒈ Background
 
