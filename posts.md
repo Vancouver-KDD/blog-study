@@ -22,4 +22,6 @@
 |18|[자바의 람다식(Lambda Expression), 그 존재의 이유에 대한 깊은 고찰](https://peterdrinker.tistory.com/383)|Nash Baek|2022.08.12|
 |19|[Java's concurrency-4-Liveness](https://yongjukwon.github.io/posts/java-concurrency-4-liveness/)|Yongju Kwon|2022.08.22|
 |20|[Unicode and utf-8 character encoding](https://github.com/bosung90/blog-study/blob/master/erickim/2022-08-22-unicode-and-utf8-character-encoding.md)|Eric Kim|2022.08.22|
+|21|[비트코인(Bitcoin)에 대한 고찰 (인문학적인 접근)](https://peterdrinker.tistory.com/412)|Nash Baek|2022.08.26|
+|22|[Why TypeScript 1](https://triptocodes.github.io/why-typscript-1/)|Somi Jeon|2022.08.26|
 | ... | ... | ... | ... |

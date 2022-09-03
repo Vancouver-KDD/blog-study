@@ -1,6 +1,6 @@
 # Blog Study
 
-*Read this in other languages*: [English](README.md), [한국어](README_ko.md)\
+*Read this in other languages*: [English](README.md), [한국어](README_ko.md)
 *Posts:* [Posts](/posts.md)
 
 ## 📝 Goal 
@@ -61,6 +61,7 @@
 - $30 will be submitted to the group leader
 - $5 will be deducted if you don’t post an article
 - $2 will be deducted if you are late to post an article
+- $5 will be deducted if you don't participate in the weekly meeting(every Tuesday)
 - If the balance is all used, you cannot join the next study
 - The money gathered will be used for snacks or coffee at the last meeting
 - All remaining will be returned
