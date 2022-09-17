@@ -72,7 +72,7 @@ require/module.exports 를 사용할수있는 javascript 환경을 CommonJS 또�
 
 ​
 
-하지만 생각해보라, NodeJS 을 서버에서만 돌리기에는 너무 아깝다. 어차피 같은 JavaScript인데 브라우저에서도 돌리면 얼마나 좋을까?
+하지만 생각해보라, NodeJS 에서 돌아가는 수많은 자바스크립트 라이브러리들을 서버에서만 돌리기에는 너무 아깝다. 어차피 같은 JavaScript인데 브라우저에서도 돌리면 얼마나 좋을까?
 
 그래서 Browserify, Webpack, Rollup, 그리고 Parcel 이 그것을 해결하기 위해 솔루션을 제공하기 시작했다.
 
