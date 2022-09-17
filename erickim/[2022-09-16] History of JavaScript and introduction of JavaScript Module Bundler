@@ -4,7 +4,7 @@
 
 하지만 Webpack을 배워보려고 했지만 너무 복잡해서 포기하는분들이 많이 계실거라고 믿는다.
 
-오늘은 Webpack이 왜 만들어졌고, Webpack의 대체재로 왜 Rollup이 각광을 받는지 소개해 드릴려고 한다.
+오늘은 Webpack와 Rollup과 같은 JavaScript Module Bundler 의 히스토리를 에 대해서 배워보자.
 
 ​
 
