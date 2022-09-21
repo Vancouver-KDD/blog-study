@@ -1,0 +1,159 @@
+소개
+
+웹 개발을 하신다면 아마 대부분 Webpack을 한번쯤은 들어보셨을것이다.
+
+하지만 Webpack을 배워보려고 했지만 너무 복잡해서 포기하는분들이 많이 계실거라고 믿는다.
+
+오늘은 Webpack와 Rollup과 같은 JavaScript Module Bundler 의 히스토리를 에 대해서 배워보자.
+
+​
+
+초창기 자바스크립트
+
+초창기 인터넷은 과학자들끼리 서로 리서치 자료들을 공유하기 위해 만들어어졌고,
+
+웹사이트는 지금의 markdown 과 크게 다르지 않았다.
+
+자바스크립트는 아주 단순했던 웹사이트들을 조금더 interactive 하게 만들기위해 Brendan Eich에 의해 1995년 Netscape 2 을 위해 개발되었다.
+
+처음에는 아주 단순한 로직만을 위한 스크립트였고, 그렇기때문에 10일만에 만들어졌다는게 정설이다.
+
+자바스크립트는 html 에 script 태그로 불러올수있다.
+
+​
+
+첫번째는 아래와같이 스크립트 태그 안에 inline 으로 넣는것이며
+
+    <script>console.log('hello world')</script> 
+
+두번째는 스크립트 태그에 src 을 해서 js 파일을 불러오는것이다.
+
+    <script src="myscripts.js" defer></script>
+
+​
+
+이처럼 자바스크립트는 브라우저 안에서만 돌아가는 코드였던 것이다.
+
+​
+
+즉, html 파일없이 js 를 바로 돌릴수 있는건 Nodejs 가 나오고 난 후부터다.
+
+​
+
+NodeJS
+
+크롬 브라우저가 자바스크립트를 돌릴수있는 V8 엔진을 브라우저없이 stand-alone 으로 돌릴수있게 공개하면서 나온게 바로 NodeJS 다.
+
+예를들어 아래와 같은 index.js 파일이 있다면,
+
+// index.js
+
+console.log('hello world')
+
+// ===
+
+그것을 실행시키기 위해서는 단순히 아래와 같은 커맨드를 돌리면 된다.
+
+    node index.js
+
+    // prints hello world
+
+​
+
+대부분의 개발자들은 개발을 하기 위해 수많은 라이브러리를 쓴다. 그리고 라이브러리들도 이어서 다른 라이브러리를 쓰게된다.
+
+그걸 영어로 dependencies 라고 부르며, 보통 아무리 작은 프로젝트라도 수백개 이상의 dependency 가 존재하게 된다.
+
+nodejs 에서는 이런 dependencies 를 불러오거나 내보내기 위해 require 과 module.exports 를 사용한다.
+
+하지만 예상하셨겠지만 require 과 module.exports 는 nodejs 에서만 사용가능하고 브라우저에서는 사용 가능하지 않다.
+
+require/module.exports 를 사용할수있는 javascript 환경을 CommonJS 또는 CJS 라고 부른다.
+
+​
+
+하지만 생각해보라, NodeJS 에서 돌아가는 수많은 자바스크립트 라이브러리들을 서버에서만 돌리기에는 너무 아깝다. 어차피 같은 JavaScript인데 브라우저에서도 돌리면 얼마나 좋을까?
+
+그래서 Browserify, Webpack, Rollup, 그리고 Parcel 이 그것을 해결하기 위해 솔루션을 제공하기 시작했다.
+
+​
+
+JavaScript Module Bundler 의 등장
+
+위에서 언급했지만 browser 에서 자바스크립트를 inline 또는 <script src=index.js> 와 같이 불러와야한다.
+
+하지만 NodeJS 프로젝트는 보통 적게는 수백 많게는 수만개이상의 js 파일들이 존재한다.
+
+수백 수만개의 <script src="file1.js">  <script src="file2.js">  <script src="file3.js">  가 있다면 어떻게 될까?
+
+지금은 많이 나아졌지만 그래도 초창기 http 는 같은 origin 이라도 계속해서 새로운 handshake 이 필요했기때문에 수백 수천개의 js 을 따로따로 받을려면 속도가 아주 많이 느려진다.
+
+그리고 html 파일 사이즈도 엄청나게 커질것이다 (물론 하나의 js 파일에서 다른 js 파일들을 로드 할수도 있겠지만 그래도 속도가 아주 느린건 변함이 없다).
+
+그럼 수백 수천개의 js 파일들을 concatenate 해서 하나의 js 파일로 만들면 되지 않을까?
+
+실제로 처음에는 그런 방법을 사용하였다. 예를들어서
+
+<script src="index.js">
+
+// index.js
+
+// js from file1.js
+
+console.log('file1 content')
+
+// js from file2.js
+
+console.log('file2 content')
+
+// js from file3.js
+
+...
+
+이렇게 여러개의 자바스크립트를 번들하여 하나의 자바스크립트 파일을 만드는 과정을 Module Bundler 라고 부르며
+
+번들을 할때 어떤 환경을 위한 번들인지 결정을 할 수 있다. 예를들어서 NodeJS 에서 잘 돌아가는것을 CommonJS/CJS 라고 부르며 브라우에서도 잘 돌아가는 환경중에 대표적으로 iife가 있다.
+
+그리고 nodejs 와 브라우저에서도 다 돌아가게 하는 umd 가 있다. umd 가 파일 사이즈가 제일 크다.
+
+그리고 등장한게 ESM 이다. 거의 모든 자바스크립트 개발자들이 사용하는 바로 그 import/export default 이다.
+
+NodeJS는 v12, 브라우저는 2017년 부터 사용 가능해졌으며 현재 95퍼센트의 브라우저가 ESM 사용이 가능하다.
+
+브라우저에서는 <script type="module" src="main.js"></script> 식으로 사용이 가능하다.
+
+NodeJS 에서는 package.json 에 type: module 을 넣으면 된다.
+
+​
+
+ESM 을 사용하면 최고의 성능, 그리고 가장 작은 JS 파일이 생성이 된다.
+
+​
+
+Tree shaking
+
+자바스크립트를 하나의 js 파일로 만들기 위해 생각없이 js파일을 전부다 concatenate 하면 js 파일 사이즈가 너무 크고, 사용하지 않는 js 코드들이 너무 많다.
+
+그래서 등장한게 tree shaking, 즉 자바스크립트를 실행시키지 않고, 어떤 js 파일들이 사용되고 사용되지 않는지 파악하여 필요없는 js 코드는 제외하는기술이다.
+
+최근에는 기술이 너무 좋아져서 사용하지 않는 function 까지도 지워준다.
+
+tree shaking 의 진정한 진가는 ESM 을 사용하면 나타난다. 왜냐면 ESM 은 어떤 JS 파일들이 불러오는지 바로 알 수 있기 때문이다.
+
+​
+
+﻿포스팅 원문 출처: 
+
+https://rollupjs.org/guide/en/
+
+https://betterprogramming.pub/the-battle-of-bundlers-6333a4e3eda9#:~:text=webpack%20and%20Rollup%20both%20require,is%20why%20you%20use%20path.
+
+https://medium.com/@PepsRyuu/why-i-use-rollup-and-not-webpack-e3ab163f4fd3
+
+https://www.learnwithjason.dev/blog/learn-rollup-js
+
+https://blog.logrocket.com/transpile-es-modules-with-webpack-node-js/
+
+https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm
+
+https://caniuse.com/?search=esm
