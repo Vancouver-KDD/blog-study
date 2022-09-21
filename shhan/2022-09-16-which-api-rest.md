@@ -95,4 +95,4 @@ As endpoints and payloads are determined by the server, the development process 
 
 ---
 
-To address the issues outlined above, Facebook (now Meta) developed a client-driven data query language called GraphQL. We will discuss GraphQL as our 
+To address the issues outlined above, Facebook (now Meta) developed a client-driven data query language called GraphQL. We will discuss how GraphQL evolved from the REST architecture in our next blog.
