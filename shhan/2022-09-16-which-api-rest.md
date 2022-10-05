@@ -49,7 +49,7 @@ The client-server model enforces the principle of _separation of concerns_: sepa
 
 All calls with a REST API must be stateless. This means that every interaction is independent, and each request and response provides all the information required to complete the interaction. Every request by the client is interpreted by the server as a brand new ask — the server remembers nothing about past requests. Stateless transfer significantly reduces the memory load of the server and allows the system to scale without having to worry about overloading the server with too many requests.
 
-Because each request sent to server requires all the information to complete the request, you might have seen HTTP request headers like so:
+Because each request sent to the server requires all the information to complete the request, you might have seen HTTP request headers like so:
 
 ```JSON
 {
