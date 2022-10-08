@@ -7,7 +7,7 @@
 
 ### Class diagram
 <div style="text-align:center">
-  <img alt="command_pattern_diagram" src="../assets/img/design-patterns/command_diagram.png">
+  <img alt="command_pattern_diagram" src="./images/command_design_pattern_diagram.png">
 </div>
 
 ### What needs to implement
